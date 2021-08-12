@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Document</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        h1 {
+            /* Centraliza o título */
+            text-align: center;
+            /* Muda cor do texto */
+            color: darkgreen;
+            background-color: white;
+        }
+        mark {
+            /* Muda o fundo do marca-texto */
+            background-color: aquamarine;
+        }
+        p {
+            /* Fonts se não tiver a primeira, vai pra segunda e assim sucessivamente */
+            font-family: Calibri,Arial, sans-serif;
+        }
+        p.direita{ /* <p class="direita"> */            
+            text-align: right;  /* Alinhado a direita */            
+        }
+        address{
+            text-align: center; /*Centraliza o texto  */
+        }
+        del {
+            color: dimgray; /* Muda a cor do texto */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formatação de textos</h1>
+    
+    <p class="direita">Baseado em fatos reais.</p>
+    <!-- 
+        Negrito: <b> (bold)
+        Itálico: <i>
+     -->
+    <p>Orkutilson era um adolescente comum. Estudava em uma <b>escola estadual</b> e sua matéria preferida era <i>Matemática</i>.</p>
+
+    <!-- 
+        TAGS SEMÂNTICAS -> robô do google entende que é importante
+        Negrito: <strong> (forte)
+        Itálico: <em> (emphasis - ênfase)
+     -->
+     <p>Orkutilson era um adolescente comum. Estudava em uma <strong>escola estadual</strong> e sua matéria preferida era <em>Matemática</em>.</p>
+
+     <!-- 
+         <mark>: efeito marca texto (amarelo por padrão)
+         <del>: risca um trecho do texto
+         <ins>: marca um trecho que foi inserido posteriormente ao texto principal. Pode ser usado também para fazer sublinhado.
+      -->
+     <p>Ele também gostava de usar caneta marca-texto para <mark>destacar os trechos mais importantes</mark>. No entanto, sua professora achava Orkutilson <del>meio lerdo</del> <ins>não muito inteligente</ins> </p>
+
+     <!-- 
+        <sub>: texto SUBscrito
+        <sup>: texto sobrescrito (SUPerscript)
+        <quote>: representa uma citação no meio de um parágrafo (TAG SEMÂNTICA)
+     -->
+
+     <p>Orkutilson também gostava de fórmulas. Suas preferidas eram H<sub>2</sub>O e E = mc<sup>2</sup>. Sua frase favorita era: <quote>"Penso, logo existo". (Descartes)</quote>.</p>
+     
+     <!-- 
+        <blockquote>: usado para fazer um bloco de citação (quando o parágrafo inteiro é uma citação)
+      -->
+     <p>Seu trecho de letra de musica preferida era:</p>
+     <blockquote>
+         "Há tantos mundos diferentes, <br>
+         tantos sóis diferentes.<br>
+         E nós temos apenas um mundo,<br>
+         Mas vivemos em mundo diferentes.<br>
+         (Dire Straits, <em> Brothers in Arms</em>)"
+     </blockquote>
+
+     <!-- 
+        <abbr>: serve para fazer abreviaturas
+        <code>: identifica códigos de programação e aparecem em uma fonte diferente
+        &lt; -> sinal de  <
+        &gt; -> sinal de  >
+        Códigos que começam com & e terminam com ; são chamados de HTML ENTITIES.
+     -->
+
+     <p>Nas horas vagas, Orkutilson era um membro ativa da <abbr title="Associação dos Moradores do Bairro do Limão">ASMOBALI</abbr> e estudava <abbr title="Hypertext Markup Language">HTML</abbr>. Suas <em>tags</em> preferidas eram <code>&lt;mark&gt;</code> e <code>&lt;blockquote&gt;</code>.</p>
+     
+     <!-- 
+         <address>: Identifica infomações de contato em uma página, como endereço, telefone e e-mail
+         (TAG SEMÂNTICA)
+      -->
+
+     <p>Entre em contato com Orkutilson:</p>
+     <address>
+         Rua do Sobe e Desce, 33 - Bairro da Ladeira<br>
+         Telefone: (36) 98765-4321<br>
+         orkutilson@hotmail.com<br>
+     </address>
+
+     <p class="direita"><em>(Autor desconhecido)</em></p>
+</body>
+</html>
