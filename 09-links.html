@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+    <!-- Link para o arquivo CSS externo 09.css -->
+    <link rel="stylesheet" href="09.css">
 </head>
 <body>
     <!-- 
@@ -31,7 +33,81 @@
         UM LINK DE INTERNET É TECNICAMENTE CHAMADO DE URL (UNIVERSAL RESOURCE LOCATOR - localizador universal de recursos).
 
      -->
+     <!-- 
+         Existem dois tipos de elementos no HTML 
+            1) Elementos de linha (inline): quando colocados em sequência ocupam a mesma linha, se houver espaço. Exemplos: <a>, <img>.
+            2) Elementos de bloco (block): quando colocados em sequência, ficam um debaixo do outro. Exemplos: <p>, <div>
+        
+     -->
+    <!--  
+        <a>: representa uma ligação (link) para outro conteúdo no mesmo site ou em outro site. <a> vem do inglês "anchor" (âncora).
+            atributos:
+            - href: especifica a URL de destino do link (hiperreferência)
+            - target: quando seu valor é "_blank", o link de destino será carregado em uma outra aba do navegador.
+            - rel (ATRIBUTO SEMÂNTICO): especifica o Relacionamento entre a página atual e a página/conteúdo linkado.
+            Valores possíveis:
+                * external: identifica um link externo.
+                * dofollow: quando o link aponta para um site de alta reputação ou que o autor recomenda (endossa).
+                * nofollow: quando link aponta para um conteúdo de baixa reputação ou patrocinado, ou que o autor não recomenda.
+                * prev: link para a página anterior de um mesmo site.
+                * next: link para a página seguinte de um mesmo site.
+                * autor: identifica o link para o site pessoal ou o e-mail di autor da página.
+    -->
+    
+    <!-- Link externo: link para outro site. O href precisa ser a url completa, começando poe http:// ou https:// -->
 
+    <p>
+        Acesse agora o <a href="https://fatecfranca.edu.br" rel="external dofollow">Site da Fatec da Franca</a> e fique sabendo das novidades dos cursos.
+    </p>
+
+    <!-- Link interno: link para outra página no mesmo site. pode conter apenas a parte da rota ou caminho da URL, sem o domínio e sem o protocolo -->
+    <p>
+        <a href="07-imagens.html">Formatos de imagem</a>
+    </p>
+
+    <!-- Link de imagem: o texto que fica entre as tags de abertura e fechamento é substituido por um elemento img -->
+
+    <div>
+        <a href="08-imagens2.html">
+            <img src="img/apptiva-icon.png" alt="Site da Aptiva">
+        </a>
+    </div>
      
+    <div>
+        <!-- Esse link será aberto em uma nova aba do navegador. Geralmente, target="_blank" é usado para links externos, para evitar que o usuário se "esqueça" de voltar para o site original-->
+        <ul type="square">
+            <li>
+                <a href="https://github.com" target="_blank" rel="external dofollow">Github</a>
+            </li>
+            <li>
+                <a href="http://pudim.com.br/" target="_blank" rel="external nofollow">Pudim</a>
+            </li>
+        </ul>
+    </div>
+
+    <p>
+        <a href="08-imagens2.html" rel="prev">&larr; Pagina anterior<a>
+        <a href="10-imagens-dinamicas.html" rel="next">Pagina seguinte &rarr;<a>
+    </p>
+    
+    <!-- Para forçar um conteúdo a ser baixado (download) em vez de ser aberto no navegador, podemos usar o atributo download -->
+    <p>
+        <a href="img/metal.jpg" download>Faça o download da imagem</a>
+    </p>
+
+    <p>
+        <!-- O atributo download pode receber um valor que será o nome que o arquivo terá quando for baixado -->
+        Aprenda mais sobre <em>links</em> com a <a href="arquivos/10-apostila-links.pdf" download="Apostila de links do Prof Gustavo Guanabara.pdf">apostila do Prof. Gustavo Guanabara</a>
+    </p>
+
+    <p>
+        <!-- o atributo "download"  NÃO FUNCIONA para forçar o download de conteudos de links externos (hotlink) -->
+        Confira o <a href="https://site.fatecfranca.edu.br/files/horario-aulas-dsm-not-2021-2.pdf" download="Horário de Aulas DSM.pdf">horário de aulas do curso de DSM</a>.
+    </p>
+
+    <!-- Links para e-mails têm o href iniciado por mailto: -->
+    <p>&copy; 2011 <a href="https://faustocintra.com.br" rel="external dofollow author">Prof. Fausto Cintra</a>. Contato: <a href="mailto:professor@faustocintra.com.br" rel="author">professor@faustocintra.com.br</a></p>
+
+    
 </body>
 </html>

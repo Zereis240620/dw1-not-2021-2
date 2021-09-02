@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas (ou responsivas)</title>
+</head>
+<body>  
+    <!-- Imagem não responsiva -->
+    <img src="img/distance-education-1000px.jpg" alt="Imagem de 1000px">  
+    <!-- 
+        A tag <picture> permite especificar várias arquivos diferentes para uma mesma imagem, adaptando-se à largura da janela do navegador.
+     -->
+    <picture>
+        <!-- 
+            As medidas nas quais o tamanho da imagem muda são chamados de BREAKPOINTS. 
+            Uma listagem atualizada em 2021 pode ser consutada (em inglês) em: 
+            https://devfacts.com/media-queries-breakpoints-2021/            
+        -->
+        <!-- 
+            O atributo "type" identifica o tipo de conteúdo (MIME Type) que deve ser exibido.
+            Para uma lista completa de MIME types, acesse:
+            https://www.iana.org/assignments/media-types/media-types.xhtml
+         -->
+
+        <!-- Quando a tela tiver até 630px de largura, será carregada/exibida a imagem de 300px -->
+        <source media="(max-width: 630px)" srcset="img/distance-education-300px.jpg" type="image/jpeg">
+      
+        <!-- Quando a tela tiver até 1030px de largura, será carregada/exibida a imagem de 600px -->
+        <source media="(max-width: 1030px)" srcset="img/distance-education-600px.jpg" type="image/jpeg">
+
+        <!-- Quando a tela tiver mais de 1030px, será carregada a imagem de 1000px ("DEFAULT")-->
+        <img src="img/distance-education-1000px.jpg" alt="Imagem de 1000px">
+        
+    </picture>
+</body>
+</html>
