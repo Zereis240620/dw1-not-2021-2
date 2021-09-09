@@ -15,5 +15,49 @@
         <li><strong>OGG</strong>. Também conhecido como OGG Vorbis, foi desenvolvido pela função Xiph.org e lançado em 2000 como uma alternativa livre ao MP3. Apesar de ter mais qualidade técnica, nunca alcançou a popularidade do concorrente. Também é um formato de compressão com perdas.</li>
         <li><strong>WAV</strong>. Formato nativo de áudio dos sistemas operacionais da Microsoft e da IBM, lançado em 1991. Armazena o áudio sem compressão; portanto, os arquivos .wav são bem maiores que os dos outros formatos, embora a qualidade sonora também seja melhor.</li>
     </ul>
+    
+    <h2>Exemplos de áudio</h2>
+        <!-- 
+            A tag <audio> é usada para colocar arquivos de áudio em página HTML
+            - controls: exibie os controles de mídia (reproduzir/pausar, volume, etc.)
+            - autoplay: inicia a reprodução do áudio assim que a página é carregada
+            - preload: indica o que será carregado antecipadamente, antes que o botão de reproduzir seja acionado. Valores:
+                * none: nada será pré-carregado.
+                * metadata: carrega apenas as informações sobre o arquivo, como sua duração (recomendado)
+                * auto: pré-carrega todo o arquivo de mídia (padrão)
+         -->
+        <audio controls preload="metadata" src="audio/trilha.mp3" >
+            <!-- 
+                Se o navegador for muito antigo, ele não conseguirá reproduzir nativamente o arquivo de áudio. Para esses casos, podemos deixar aqui uma mensagem dizendo que o navegador não suporta áudios, com a opção de fazer download do arquivo.
+             -->
+             <p>Seu navegador não suporta a reprodução de áudio HTML. Clique <a href="audio/trilha.mp3" download="">aqui</a> para baixar o arquivo.</p>
+
+        </audio>
+
+        <p>Áudio com arquivo remoto</p>
+        
+        <audio controls preload="metadata" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Wolfgang_Amadeus_Mozart_-_Symphony_40_g-moll_-_1._Molto_allegro.ogg">
+            
+            <p>Seu navegador não suporta a reprodução de áudio HTML. Clique <a href="https://upload.wikimedia.org/wikipedia/commons/9/99/Wolfgang_Amadeus_Mozart_-_Symphony_40_g-moll_-_1._Molto_allegro.ogg" download="">aqui</a> para baixar o arquivo.</p>
+
+        </audio>
+
+        <h2>Áudio com múltiplas fontes</h2>
+        <audio controls preload="metadata">
+            <!-- Os sources são dispostos em ordem de prioridade  -->
+            <!--
+                O atributo "type" identifica o tipo de conteúdo (MIME Type) 
+                que deve ser exibido.
+                Para uma lista completa de MIME types, acesse:
+                https://www.iana.org/assignments/media-types/media-types.xhtml
+            -->
+            <source src="audio/trilha.mp3" type="audio/mpeg">
+            <source src="audio/trilha.ogg" type="audio/ogg">
+            <source src="audio/trilha.wav" type="audio/wav">
+            
+            <p>Seu navegador não suporta a reprodução de áudio HTML. Clique <a href="audio/trilha.mp3" download="">aqui</a> para baixar o arquivo.</p>
+        </audio>
+
+
 </body>
 </html>
