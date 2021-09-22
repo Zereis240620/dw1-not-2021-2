@@ -1,0 +1,74 @@
+/* 
+    UNIDADES DE MEDIDA EM CSS
+
+    1) Unidades absolutas:
+    - px (pixel): corresponde a um ponto de iluminação da tela, ou, quando isso não puder determinado (no papel, por exemplo), equivale a 1/96 de uma polegada (1 polegada = 2,54). Seu tamanho, portanto, depende da resolução da tela
+    - pt: (point): medida usada para o tamanho de fontes. Equivale a 1/72 de uma polegada
+    - cm: (centímetro): para impressão
+    - mm: (milímetro): para impressão
+    - in: (inches, polegadas): para impressão
+
+    2) Unidades relativas:
+    -%: sempre em relação ao tamanho do pai
+    -em: usada para fontes. Signica 100% do tamanho da fonte do elemento pai.
+    - rem: usada para fontes. Significa 100% do tamanho da fonte configurado para o elemento <html> (elemento raiz)
+    - vw: 1% da largura do viewport (área de visualização do navegador)
+    - vh: 1% da altura do viewport
+*/
+
+html{
+/* Definindo o tamanho da fonte do elemento raiz */
+font-size: 20px;
+}
+
+#box1{
+background-color: aliceblue;
+border: 1px solid blue;
+text-align: center;
+width: 200px; /* largura */
+height: 200px; /* altura */
+font-size: 20pt;
+}
+
+#box2 {
+background-color: lightyellow;
+border: 6px dotted orange;
+width: 6cm;
+height: 20mm;
+}
+
+#pai1 {
+background-color: yellowgreen;
+border: 2px dashed green;
+text-align: center;
+width: 600px;
+height: 300px;
+font-size: 25pt;
+}
+
+#filho1{
+background-color: pink;
+border: 1px solid darkred;
+width: 50%; /* relativa à largura do pai */
+height: 70%; /* relativa à altura do pai */
+font-size: 0.5em; /* 50% do tamanho da fonte do pai */
+}
+
+#filho2 {
+background-color:orange;
+border: 2px solid darkorange;
+width: 50vw;/* Cada vw é 1% da largura da janela */
+height: 10%;
+font-size: 40%; /* 40% tamanho da fonte do pai, equivale a 0.4em */
+}
+
+#box3{
+background-color: coral;
+border: 3px solid brown;
+font-size: 1.5rem; /* 150% do tamanho da fonte do elemento raiz */
+height: 15vh; /* Cada vh é 1% da altura da janela */
+}
+
+#p1{
+font-size: 0.8rem; /* 80% do tamanho da fonte do elemento raiz */
+}
