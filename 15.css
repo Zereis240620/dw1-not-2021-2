@@ -1,0 +1,91 @@
+/* CSS reset */
+/***************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+h1{
+    /* Sombra de texto, valores iguais aos de um box-shadow */
+    text-shadow:  -2px  -2px 4px slategray;
+}
+
+#box1 {
+    border: 2px solid blue;
+    margin: 100px;
+    padding: 50px;
+    
+    /* Sombra em um elemento da caixa 
+        Valores:
+        1) Deslocamento horizontal
+        2) Deslocamento vertical da sombra
+        3) Embaçamento da sombra (Quanto maior mais embaçada)
+        4) Cor
+    */
+    box-shadow: 10px  5px 10px black;
+}
+
+#box2 {
+    box-sizing: border-box;
+    /* Incluir border e padding no tamanho do elemento */
+    border: 20px ridge green;
+    height: 300px;
+    width: 500px;
+    padding: 0px; /*  Os Quatro Lados */
+    margin: 20px; /*  Os Quatro Lados */
+    border-radius: 20px; /* Cantos Arredondados */
+}
+
+#box3{
+    background-color: darkseagreen;
+
+    border-top: 2px solid orange; /* Topo  */
+    border-right: 4px dotted blue;  /* Direita  */
+    border-bottom: 2px dashed darkmagenta; /* Embaixo  */
+    border-right: 12px ridge limegreen;  /* Esquerda  */
+    
+
+    /* padding-top: 20px;  */ /* Topo  */
+    /* padding-right: 12px;  */ /* Direita  */
+    /* padding-bottom: 50px; */ /* Embaixo  */
+    /* padding-left: 20px; */ /*Esquerda */
+    
+    /* Parte do topo e segue o sentido horário */
+    padding: 20px 12px 50px 20px;
+
+    /* margin-top: 30px;  */ /* Topo  */
+    /* margin-right: 16px;  */ /* Direita  */
+    /* margin-bottom: 10px;  */ /* Embaixo  */
+    /* margin-left: 25px; */ /* Esquerda */
+    
+    /* Parte do topo e segue o sentido horário */
+    margin: 30px 16px 10px 25px;
+}
+
+#box4{
+    height: 150px;
+    width: 150px;
+    border: 5px solid orangered;
+    border-radius: 50%; /* Gera um círculo */            
+    display: flex; /* Habilita o flexbox */
+    align-items: center; /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+}
+
+#box5{
+    background-color: yellow;
+    border: 2px solid sienna;
+
+    /* Quando são dados duas medida, a primeira serve para top e bottom e a segunda para left e right */            
+    padding: 30px 50px;
+    margin: 40px 20px;
+    /* O outline (pouco utilizado) é um segundo contorno do elemento, externo à borda */
+    outline: 6px solid aqua;
+
+}

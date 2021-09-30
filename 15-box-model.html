@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
-    <style>
-        /* CSS reset */
-        /***************************************/
-
-        body{
-            margin: 0;
-            padding: 0;
-        }
-
-        body{
-            border: 2px solid red;            
-            padding: 10px;
-        }
-
-        #box1{
-            border: 2px solid blue;
-            margin: 100px;
-            padding: 50px;
-        }
-        
-        #box2{
-            box-sizing: border-box; /* Incluir border e padding no tamanho do elemento */
-            border: 20px solid green;
-            height: 50px;
-            width: 300px;
-            padding: 0px;
-        }        
-
-    </style>
+    <link rel="stylesheet" href="15.css">
 </head>
 <body>
-        <div id="box1">
-            Conteúdo
-        </div>
-        
-        <hr>
-        
-        <div id="box2">
-            Caixa
-        </div>
+    
+    <h1>Box Model</h1>
+
+    <div id="box1">
+        Conteúdo
+    </div>
+
+    <hr>
+
+    <!-- Normalmente, a medida da borda NÃO é computada nas dimensões do elemento. Para que a borda faça parte da medida total do elemento, é necessário colocar a seguinte regra no css:
+            box-sizing: border-box;
+        -->
+    <div id="box2">
+        Caixa
+    </div>
+    <hr>
+
+    <div id="box3">
+        Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed
+        non consequat odio. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Per aumento
+        de cachacis, eu reclamis. Casamentiss faiz malandris se pirulitá.
+
+        Suco de cevadiss deixa as pessoas mais interessantis. Mais vale um bebadis conhecidiss, que um alcoolatra
+        anonimis. Si num tem leite então bota uma pinga aí cumpadi! Não sou faixa preta cumpadi, sou preto inteiris,
+        inteiris.
+    </div>
+    <hr>
+
+    <div id="box4">
+        Texto círculo
+    </div>
+    <hr>
+
+    <div id="box5">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem eos aperiam repellat nemo nobis ea, magnam praesentium numquam quasi porro dolor deserunt quae officiis, atque perferendis distinctio sed dolorem id.            
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,56 @@
+* {
+    font-family: Calibri, Arial, sans-serif;    /* Fonte para todos os elementos */
+}
+body {
+    font-size: 16px;              /* Tamanho da fonte */
+    background-color: #e0e0e0;
+}
+main {
+    font-size: 18px;                /* Tamanho da fonte */
+    border-radius: 16px;            /* Bordas arredondadas */
+    background-color: white;     /* Cor de fundo */
+    width: 80%;                     /* Largura */
+    margin: 30px auto;              /* Espaçamento externo */
+    padding: 20px;                  /* Espaçamento interno */
+}
+h1 {                                    
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.4);    /* Sombra do texto */
+    font-size: 3rem;
+    text-align: center;
+    color: #66bb6a;
+}
+figcaption {
+    font-style: italic;      /* Estilo da fonte */        
+    text-align: center;
+}
+
+#map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p#link{
+    text-align: right;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+ol[type="1"], ol:not([type]) {  /* Lista ordenada de primeiro nível */
+    margin-left: 30%;       /* Margem esquerda */
+}
+
+ol[type="1"] > li, ol:not([type]) > li {
+    font-weight: bold;  /* Coloca em negrito os itens da lista ordenada de primeiro nível */
+}
+
+ol[type="a"] > li{
+    font-weight: initial;
+}
+
+iframe {                /* Elemento que contém o vídeo do Youtube */
+    display: block;     /* Exibição em bloco */
+    margin: 0 auto;     /* Centraliza horizontalmente */
+}
